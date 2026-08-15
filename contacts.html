@@ -1,67 +1,79 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Amana</title>
 </head>
 <body>
 
-        <header>
-            <div class="logo">
-                <h1>Al-Amana</h1>
-            </div>
-            <nav> 
-                <ul>
-                    <li><a href="index.html"  >Accueil</a></li>
-                    <li><a href="apropos.html" >À propos</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-                    
-                    <li><a href="evenements.html" >Événements</a></li>
-                    <li><a href="activites.html" >Activités</a></li>
-                </ul>
-            </nav>
-            <button class="menu-burger">
-                <span></span>
-                <span></span>  
-                <span></span>
-            </button>
-        </header> 
-        <main>
-        <section class="contact">
+    <header>
+        <button id="toggle-theme">🌙</button>
+        <div class="logo">
+            <h1>Al-Amana</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="contacts.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="page-hero hero-contacts">
             <h2>Contactez-nous</h2>
-            <p>Pour toute question ou suggestion, n'hésitez pas à nous contacter via le formulaire ci-dessous :</p>
-            <form action="#" method="post">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
-
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Envoyer</button>
-                <p id="form-message"></p>
-            </form>
+            <p>Une question, une suggestion ? Écrivez-nous.</p>
         </section>
-        <address>
-            <strong>Al-Amana </strong><br>
-            123 Rue de l'Islam, 75000 Paris, France<br>
-            Téléphone :<br>
-            +33 1 23 45 67 89<br>
-            Email :<br>
-            contact@al-amana.fr<br>
-        </address>
-        </main>
-        <footer>
-            <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
-        </footer>
 
-<script src="script.js"></script>
+        <section class="section-full bg-blanc">
+            <div class="container">
+                <div class="contact">
+                    <form action="#" method="post" id="contact-form">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                        <span class="erreur"></span>
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="erreur"></span>
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="erreur"></span>
+
+                        <button type="submit">Envoyer</button>
+                        <p id="form-message"></p>
+                    </form>
+                </div>
+                <address>
+                    <strong>Al-Amana</strong><br>
+                    123 Rue de l'Islam, 75000 Paris, France<br>
+                    Téléphone :<br>
+                    +33 1 23 45 67 89<br>
+                    Email :<br>
+                    contact@al-amana.fr<br>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

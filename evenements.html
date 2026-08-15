@@ -1,68 +1,99 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Amana</title>
 </head>
 <body>
 
-        <header>
-            <div class="logo">
-                <h1>Al-Amana</h1>
-            </div>
-            <nav> 
-                <ul>
-                    <li><a href="index.html"  >Accueil</a></li>
-                    <li><a href="apropos.html" >À propos</a></li>
-                    <li><a href="contacts.html" >Contact</a></li>
-                    
-                    <li><a href="evenements.html" >Événements</a></li>
-                    <li><a href="activites.html" >Activités</a></li>
-                </ul>
-            </nav>
-            <button class="menu-burger">
-                <span></span>
-                <span></span>  
-                <span></span>
-            </button>
-        </header> 
-        <main>
-            <section class="evenements">
-                <h2>Nos Événements</h2>
-                <div class="evenements-container">  
+    <header>
+        
+        <div class="logo">
+            <h1>Al-Amana</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="evenements.html" class="active">Événements</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button id="toggle-theme">🌙</button>
+    </header>
+
+    <main>
+        <section class="page-hero hero-evenements">
+            <h2>Nos Événements</h2>
+            <p>Rejoignez-nous lors de nos prochains rendez-vous.</p>
+        </section>
+
+        <section class="section-full bg-blanc">
+            <div class="container evenements">
+                <div class="evenements-container">
+
                     <div class="evenements-card" data-date="2026-02-25">
+                        <img src="images/photo3.jpg" alt="Conférence les piliers de l'islam" loading="lazy">
                         <h3>Conférences les piliers de l'islam</h3>
                         <p class="date">25 février 2026</p>
                         <p>Conférence sur les piliers de l'islam, animée par des experts en théologie islamique, pour approfondir la compréhension des fondements de la foi.</p>
                     </div>
+
                     <div class="evenements-card" data-date="2026-03-10">
+                        <img src="images/photo6.jpg" alt="Iftar communautaire" loading="lazy">
                         <h3>Iftar communautaire</h3>
                         <p class="date">10 mars 2026</p>
                         <p>Repas de fin de jeûne organisé pour la communauté, favorisant le partage et la solidarité.</p>
                     </div>
+
                     <div class="evenements-card" data-date="2026-04-15">
+                        <img src="images/photo7.jpg" alt="Fête de la tabaski" loading="lazy">
                         <h3>Fête de la tabaski</h3>
                         <p class="date">15 avril 2026</p>
                         <p>Célébration de la fête de la Tabaski avec des activités culturelles et religieuses pour toute la famille.</p>
                     </div>
+
                     <div class="evenements-card" data-date="2026-05-20">
+                        <img src="images/photo8.jpg" alt="Sortie éducative" loading="lazy">
                         <h3>Sortie éducative</h3>
                         <p class="date">20 mai 2026</p>
                         <p>Excursion éducative pour les jeunes de l'association, incluant des visites de sites historiques et des ateliers pédagogiques.</p>
-
                     </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
-        </footer>
 
-<script src="script.js"></script>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-full bg-gris">
+            <div class="container">
+                <h2 class="section-title">Souvenirs de nos événements</h2>
+                <div class="galerie-grid">
+                    <img src="images/photo9.jpg" alt="Événement" loading="lazy">
+                    <img src="images/photo10.jpg" alt="Événement" loading="lazy">
+                    <img src="images/photo1.jpg" alt="Événement" loading="lazy">
+                    <img src="images/photo2.jpg" alt="Événement" loading="lazy">
+                    <img src="images/photo4.jpg" alt="Événement" loading="lazy">
+                    <img src="images/photo5.jpg" alt="Événement" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

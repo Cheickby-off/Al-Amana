@@ -1,39 +1,46 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Amana</title>
 </head>
 <body>
 
-        <header>
-            <div class="logo">
-                <h1>Al-Amana</h1>
-            </div>
-            <nav> 
-                <ul>
-                    <li><a href="index.html"  >Accueil</a></li>
-                    <li><a href="apropos.html" >À propos</a></li>
-                    <li><a href="contacts.html" >Contact</a></li>
-                    
-                    <li><a href="evenements.html">Événements</a></li>
-                    <li><a href="activites.html">Activités</a></li>
-                </ul>
-            </nav>
-            <button class="menu-burger">
-                <span></span>
-                <span></span>  
-                <span></span>
-            </button>
-        </header> 
-        <main>
-            <section class="activites">
-                <h2>Nos Activités</h2>
+    <header>
+        
+        <div class="logo">
+            <h1>Al-Amana</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="activites.html" class="active">Activités</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button id="toggle-theme">🌙</button>
+    </header>
+
+    <main>
+        <section class="page-hero hero-activites">
+            <h2>Nos Activités</h2>
+            <p>Des programmes pour tous les âges, toute l'année.</p>
+        </section>
+
+        <section class="section-full bg-blanc">
+            <div class="container activites">
                 <div class="filtres">
                     <button data-category="toutes" class="filtre-btn active">Toutes</button>
                     <button data-category="enfant" class="filtre-btn">Enfants</button>
@@ -41,34 +48,60 @@
                     <button data-category="adultes" class="filtre-btn">Adultes</button>
                 </div>
                 <div class="activites-container">
-                   
-                    <div class="activites-card" data-category="enfant">
-                            <h3>Cours de lecture et de memorisations du coran</h3>
-                            <p>Pour les enfants et adultes apprentissage progressive de la lecture et memorisation du coran en 3 mois .</p> 
-                    </div>
-                    <div class="activites-card" data-category="cours">
-                            <h3>Enseignement de la langue arabe et des fondements de la religion</h3    >
-                            <p>Formation approfondie à la langue arabe et aux principes de la religion islamique.</p> 
-                    </div>
-                    <div class="activites-card" data-category="adultes">
-                            <h3>Conférences, séminaires et cercles d'études théologiques</h3>
-                            <p>Rencontres et échanges avec des experts pour approfondir les connaissances religieuses.</p>
-                    </div>
-                    <div class="activites-card" data-category="enfant">
-                            <h3>Soutien scolaire et mentorat pour les jeunes</h3>
-                            <p>Support académique et accompagnement personnalisé pour les jeunes dans leur parcours éducatif.</p>
-                    </div>
-                    <div class="activites-card" data-category="cours">
-                            <h3>Ateliers de caligraphe arabe</h3>
-                            <p>Apprentissage de la calligraphie arabe et perfectionnement des compétences en écriture.</p>
-                    </div>
-                </div>
-            </section>    
-        </main>
-        <footer>
-            <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
-        </footer>
 
-<script src="script.js"></script>
+                    <div class="activites-card" data-category="enfant">
+                        <img src="images/lecturecoran.jpg" alt="Cours de lecture du coran" loading="lazy">
+                        <h3>Cours de lecture et de memorisations du coran</h3>
+                        <p>Pour les enfants et adultes apprentissage progressive de la lecture et memorisation du coran en 3 mois.</p>
+                    </div>
+
+                    <div class="activites-card" data-category="cours">
+                        <img src="images/enseignement.jpg" alt="Cours de langue arabe" loading="lazy">
+                        <h3>Enseignement de la langue arabe et des fondements de la religion</h3>
+                        <p>Formation approfondie à la langue arabe et aux principes de la religion islamique.</p>
+                    </div>
+
+                    <div class="activites-card" data-category="adultes">
+                        <img src="images/conference.jpg" alt="Conférences et séminaires" loading="lazy">
+                        <h3>Conférences, séminaires et cercles d'études théologiques</h3>
+                        <p>Rencontres et échanges avec des experts pour approfondir les connaissances religieuses.</p>
+                    </div>
+
+                    <div class="activites-card" data-category="enfant">
+                        <img src="images/soutien.jpg" alt="Soutien scolaire" loading="lazy">
+                        <h3>Soutien scolaire et mentorat pour les jeunes</h3>
+                        <p>Support académique et accompagnement personnalisé pour les jeunes dans leur parcours éducatif.</p>
+                    </div>
+
+                    <div class="activites-card" data-category="cours">
+                        <img src="images/caligraphe.jpg" alt="Calligraphie arabe" loading="lazy">
+                        <h3>Ateliers de caligraphe arabe</h3>
+                        <p>Apprentissage de la calligraphie arabe et perfectionnement des compétences en écriture.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-full bg-gris">
+            <div class="container">
+                <h2 class="section-title">En images</h2>
+                <div class="galerie-grid">
+                    <img src="images/photo6.jpg" alt="Activité" loading="lazy">
+                    <img src="images/photo7.jpg" alt="Activité" loading="lazy">
+                    <img src="images/photo8.jpg" alt="Activité" loading="lazy">
+                    <img src="images/photo9.jpg" alt="Activité" loading="lazy">
+                    <img src="images/photo10.jpg" alt="Activité" loading="lazy">
+                    <img src="images/photo1.jpg" alt="Activité" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

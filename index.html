@@ -1,111 +1,176 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Amana</title>
 </head>
 <body>
 
-        <header>
-          <div class="logo">
-              <h1>Al-Amana</h1>
-          </div>
-            <nav> 
-                <ul>
-                    <li><a href="index.html" class="active" >Accueil</a></li>
-                    <li><a href="apropos.html" >À propos</a></li>
-                    <li><a href="contacts.html" >Contact</a></li>             
-                    <li><a href="evenements.html" >Événements</a></li>
-                    <li><a href="activites.html" >Activités</a></li>
-                </ul>
-            </nav>
-            <button class="menu-burger">
-                <span></span>
-                <span></span>  
-                <span></span>
-            </button>
-        </header> 
+    <header>
+        
+        <div class="logo">
+            <h1>Al-Amana</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
 
-        <main>
-            <section class="hero">
-                <h2>Bienvenue sur le site d'Al-Amana</h2>
-                <p>Découvrez nos activités et événements à venir sur la religion islamique.</p>
-                <a href="evenements.html" class="btn">Voir les événements</a>
-            </section>
-            <section class="features">
-                <div class="feature">
-                    <h3>Nos Activités</h3>
-                    <p>Participez à nos activités variées et enrichissantes.</p>
-                </div>
-                <div class="feature">
-                    <h3>Événements à venir</h3>
-                    <p>Ne manquez pas nos prochains événements passionnants.</p>
-                </div>
-                <div class="feature">
-                    <h3>Contactez-nous</h3>
-                    <p>Nous sommes là pour répondre à vos questions et suggestions.</p>
-                </div>
-            </section>
-            <section class="horaires">
-                <h2>Horaires d'ouverture</h2>
-                <ul>
-                    <li>Fadjr: 5h00 - 6h00</li>
-                    <li>Dhuhr: 12h00 - 13h00</li>
-                    <li>Asr: 16h00 - 17h00</li>
-                    <li>Maghrib: 18h00 - 19h00</li>
-                    <li>Isha: 19h30 - 20h30</li>
-                </ul>
-            </section>
-            <section class="annonces">
-                        <h2>Dernières Annonces</h2>
-                        <p>Retrouvez nos dernières annonces et mises à jour.</p>
-                    
-                   
-                        <article class="annonce">
-                        <h3>Le mariage</h3>
-                        <p>Si vous avez les moyens vous pouvez marier jusqu'a 4 bonne femmes.</p>
-                        </article>
-                    
-                   
-                        <article class="annonce">
-                            <h3>le pélérinage</h3>
-                            <p>Si vous avez les moyens et de la santé le pélérinage est une obligation</p>
-                        </article>
-                   
-                   
-                        <article class="annonce">
-                            <h3>le jeune</h3>
-                            <p>Si vous avez les moyens et de la santé le jeune est une obligation</p>
-                        </article>
-                    
-                        <article class="annonce">
-                            <h3>la prière</h3>
-                            <p>La prière est une obligation pur tous les musulmans.</p>
-                        </article>
-                        <article class="annonce">
-                            <h3>la zakat</h3>
-                            <p>La zakat est une obligation pur tous les musulmans.</p>
-                        </article>
-                        <article class="annonce">
-                            <h3>la charité</h3>
-                            <p>La charité est une obligation pour tous les musulmans.</p>
-                        </article>  
-                        <article class="annonce">
-                            <h3>la lecture du coran</h3>
-                            <p>La lecture du coran est une obligation pour tous les musulmans.</p>
-                        </article>
-                    
-            </section>
-        </main> 
-        <footer>
-            <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
-        </footer>
+        <button class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button id="toggle-theme">🌙</button>
+    </header>
 
-<script src="script.js"></script>
+    <main>
+        <section class="hero">
+            <h2>Bienvenue sur le site d'Al-Amana</h2>
+            <p>Découvrez nos activités et événements à venir sur la religion islamique.</p>
+            <a href="evenements.html" class="btn">Voir les événements</a>
+        </section>
+
+        <section class="section-full bg-blanc">
+            <div class="container">
+                <h2 class="section-title">Ce que nous proposons</h2>
+                <div class="features">
+                    <div class="feature">
+                        <img src="images/activite1.jpg" alt="Nos activités" loading="lazy">
+                        <h3>Nos Activités</h3>
+                        <p>Participez à nos activités variées et enrichissantes.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/activite2.jpg" alt="Événements à venir" loading="lazy">
+                        <h3>Événements à venir</h3>
+                        <p>Ne manquez pas nos prochains événements passionnants.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/activite3.jpg" alt="Contactez-nous" loading="lazy">
+                        <h3>Contactez-nous</h3>
+                        <p>Nous sommes là pour répondre à vos questions et suggestions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-full bg-vert">
+    <div class="container stats">
+        <div class="stat">
+            <span class="stat-num" data-target="7" data-step="0,5">0</span>
+            <p>ans d'expérience</p>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-target="500" data-step="100" data-suffix="+">0</span>
+            <p>familles aidées</p>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-target="300" data-step="100">0</span>
+            <p>sacrifices</p>
+        </div>
+    </div>
+</section>
+
+        <section class="section-full bg-gris">
+            <div class="container">
+                <h2 class="section-title">Notre communauté en images</h2>
+                <div class="galerie-grid">
+                    <img src="images/activite1.jpg" alt="Communauté" loading="lazy">
+                    <img src="images/activite2.jpg" alt="Communauté" loading="lazy">
+                    <img src="images/activite3.jpg" alt="Communauté" loading="lazy">
+                    <img src="images/activite1.jpg" alt="Communauté" loading="lazy">
+                    <img src="images/activite2.jpg" alt="Communauté" loading="lazy">
+                    <img src="images/activite3.jpg" alt="Communauté" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-full bg-blanc horaires">
+    <div class="container">
+        <h2 class="section-title">Horaires de priere</h2>
+        <div class="horaires-grid">
+            <div class="horaire-card">
+                <span class="icone">🌅</span>
+                <h3>Fadjr</h3>
+                <p>5h00 - 6h00</p>
+            </div>
+            <div class="horaire-card">
+                <span class="icone">☀️</span>
+                <h3>Dhuhr</h3>
+                <p>12h00 - 13h00</p>
+            </div>
+            <div class="horaire-card">
+                <span class="icone">🌤️</span>
+                <h3>Asr</h3>
+                <p>16h00 - 17h00</p>
+            </div>
+            <div class="horaire-card">
+                <span class="icone">🌇</span>
+                <h3>Maghrib</h3>
+                <p>18h00 - 19h00</p>
+            </div>
+            <div class="horaire-card">
+                <span class="icone">🌙</span>
+                <h3>Isha</h3>
+                <p>19h30 - 20h30</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="section-full bg-gris">
+            <div class="container annonces">
+                <h2 class="section-title" style="grid-column: 1 / -1;">Dernières Annonces</h2>
+
+                <article class="annonce">
+                    <h3>Le mariage</h3>
+                    <p>Si vous avez les moyens vous pouvez marier jusqu'à 4 bonnes femmes.</p>
+                </article>
+
+                <article class="annonce">
+                    <h3>le pélérinage</h3>
+                    <p>Si vous avez les moyens et de la santé le pélérinage est une obligation</p>
+                </article>
+
+                <article class="annonce">
+                    <h3>le jeune</h3>
+                    <p>Si vous avez les moyens et de la santé le jeune est une obligation</p>
+                </article>
+
+                <article class="annonce">
+                    <h3>la prière</h3>
+                    <p>La prière est une obligation pour tous les musulmans.</p>
+                </article>
+                <article class="annonce">
+                    <h3>la zakat</h3>
+                    <p>La zakat est une obligation pour tous les musulmans.</p>
+                </article>
+                <article class="annonce">
+                    <h3>la charité</h3>
+                    <p>La charité est une obligation pour tous les musulmans.</p>
+                </article>
+                <article class="annonce">
+                    <h3>la lecture du coran</h3>
+                    <p>La lecture du coran est une obligation pour tous les musulmans.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

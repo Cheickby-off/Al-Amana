@@ -1,55 +1,82 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Amana</title>
 </head>
 <body>
 
-        <header>
-            <div class="logo">
-                <h1>Al-Amana</h1>
-            </div>
-            <nav> 
-                <ul>
-                    <li><a href="index.html"  >Accueil</a></li>
-                    <li><a href="apropos.html" >À propos</a></li>
-                    <li><a href="contacts.html" >Contact</a></li>
-                    <li><a href="evenements.html" >Événements</a></li>
-                    <li><a href="activites.html" >Activités</a></li>
-                </ul>
-            </nav>
-            <button class="menu-burger">
-                <span></span>
-                <span></span>  
-                <span></span>
-            </button>
-        </header> 
-        <main>
-            <section>
+    <header>
+        
+        <div class="logo">
+            <h1>Al-Amana</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html" class="active">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button id="toggle-theme">🌙</button>
+    </header>
+
+    <main>
+        <section class="page-hero hero-apropos">
+            <h2>À propos d'Al-Amana</h2>
+            <p>Notre histoire, notre mission, nos valeurs.</p>
+        </section>
+
+        <section class="section-full bg-blanc">
+            <div class="container">
                 <article class="histoire">
                     <h2>Notre histoire</h2>
                     <p>L'association Al-Amana a été fondée en 2005 avec pour mission de promouvoir les valeurs islamiques et de fournir un espace de rencontre et d'échange pour la communauté.</p>
-                </article>            
+                </article>
                 <article class="mission">
                     <h2>Notre mission</h2>
                     <p>Nous nous engageons à promouvoir les valeurs islamiques et à favoriser le dialogue interculturel.</p>
                 </article>
                 <article class="valeurs">
                     <h2>Valeurs de l'association</h2>
-                    <p>Nous sommes guidés par les principes de compassion, justice et respect mutuel.</p>   
+                    <p>Nous sommes guidés par les principes de compassion, justice et respect mutuel.</p>
                 </article>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
-        </footer>
+            </div>
+        </section>
 
-<script src="script.js"></script>
+        <section class="section-full bg-gris">
+            <div class="container">
+                <h2 class="section-title">Notre communauté</h2>
+                <div class="galerie-grid">
+                    <img src="images/photo1.jpg" alt="Communauté Al-Amana" loading="lazy">
+                    <img src="images/photo2.jpg" alt="Communauté Al-Amana" loading="lazy">
+                    <img src="images/photo3.jpg" alt="Communauté Al-Amana" loading="lazy">
+                    <img src="images/photo4.jpg" alt="Communauté Al-Amana" loading="lazy">
+                    <img src="images/photo5.jpg" alt="Communauté Al-Amana" loading="lazy">
+                    <img src="images/photo6.jpg" alt="Communauté Al-Amana" loading="lazy">
+                    <img src="images/photo7.jpg" alt="Communauté Al-Amana" loading="lazy">
+                    <img src="images/photo8.jpg" alt="Communauté Al-Amana" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Al-Amana. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
